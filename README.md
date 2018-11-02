@@ -23,7 +23,7 @@ products and preparing them to the frontend.
 
 ### Installation
 
-Shopping API [Node.js](https://nodejs.org/) v4+ to run.
+Shopping API needs [Node.js](https://nodejs.org/) v4+ to run.
 
 Install the dependencies and devDependencies and start the server.
 
