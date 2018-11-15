@@ -20,7 +20,7 @@ module.exports = function (req, res, next) {
 
     function findProduct() {
         productModel.find(condition, async function (err, products) {
-            if (err) return next(new Error('COULDN\'T FIND THIS PRODUCT'));
+            if (err) return next(new Error('COULDN\'T FIND ANY PRODUCT'));
             if (!_.isUndefined(req.query.curr)) {
                 if (!listOfSymbols.includes(req.query.curr)) return next(new Error('THIS CURRENCY IS NOT SUPPORTED'));
                 await request.get(

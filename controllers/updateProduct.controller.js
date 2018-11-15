@@ -24,10 +24,8 @@ module.exports = function (req, res, next) {
             (err, product) => {
                 if (err) return next(new Error(productNotExisting));
                 if (req.body.quantity) {
-                    setTimeout(function () {
-                        product.updateAverageQuantity();
-                        product.updateTotalQuantity();
-                    });
+                    product.updateAverageQuantity();
+                    product.updateTotalQuantity();
                 }
                 product.save()
                     .then(() => res.status(201).json(

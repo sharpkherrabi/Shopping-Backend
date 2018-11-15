@@ -4,7 +4,7 @@
   "description": "the most powerfull shopping system in the world",
   "main": "app.js",
   "scripts": {
-    "start": "SET NODE_ENV=dev && node app.js",
+    "start": "NODE_ENV=dev node app.js",
     "test": "mocha"
   },
   "keywords": [
@@ -14,6 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "csv-express": "^1.2.2",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
     "mongoose": "^5.3.6",
